@@ -1,0 +1,72 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Estilo das seções */
+.section {
+    padding: 50px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Estilo do versículo do dia */
+#verse {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6a4f4b;
+    margin-top: 20px;
+}
+
+/*Estilo dos pés*/
+.pés{
+    background-color: #333;
+    color: white;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+}
+
+/* Adicionando uma cor de fundo suave */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+}
+
+/* Estilo do menu de navegação */
+a:hover {
+    text-decoration: underline;
+    color: #ff6347;
+}
+
