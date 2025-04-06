@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.6;
+    padding: 20px 260px 100px 260px;
+    /* Espaços laterais e inferior para propaganda */
+}
+
+/* Cabeçalho e navegação */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007B7F;
+    font-weight: bold;
+    padding: 6px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #005f5f;
+}
+
+/* Conteúdo principal */
+main {
+    margin-top: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #007B7F;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+section ul {
+    margin-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 6px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+/* Espaços reservados para propaganda */
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+    background-color: #f0f0f0;
+    z-index: -1;
+}
+
+body::before {
+    left: 0;
+}
+
+body::after {
+    right: 0;
+}
+
+
+
+/*Versiculo diario*/
+.destaque {
+    background-color: #f0f0f0;
+    border: 2px solid #007B7F;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.destaque h2 {
+    color: #87a7e2;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.destaque p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #333;
+}
+
+/*Movimento do menu*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header {
+    padding-top: 80px;
+    /* para compensar a altura do menu fixo */
+}
+
+
+
+/*TOPICOS*/
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*listas*/
+/* Destaque para as listas */
+section ul {
+    margin-left: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007B7F;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+section ul li {
+    margin-bottom: 10px;
+    padding: 6px 4px;
+    list-style-type: disc;
+    color: #333;
+    font-size: 1rem;
+}

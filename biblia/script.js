@@ -24,3 +24,13 @@ function displayVerse() {
 
 // Chamar a função quando a página carregar
 window.onload = displayVerse;
+
+//ver mais
+document.querySelectorAll('.ver-mais').forEach(button => {
+    button.addEventListener('click', () => {
+      const extraVerses = button.previousElementSibling;
+      const isVisible = extraVerses.style.display === 'block';
+      extraVerses.style.display = isVisible ? 'none' : 'block';
+      button.textContent = isVisible ? 'Ver mais versículos' : 'Ocultar versículos';
+    });
+  });
